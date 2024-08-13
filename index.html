@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/b9a9afa80c.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1/dist/bouncer.polyfills.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1.0/dist/bouncer.polyfills.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1.0.0/dist/bouncer.polyfills.min.js"></script>
+<script src="formValidation.js" defer></script>
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+ 
+</head>
+<body class=" content">
+  <nav class="navbar navbar-expand justify-content-between p-4">
+    <img src="images/logo.svg" alt="logo" class="navbar-brand col-2">
+    <div class="navbar-nav col-6 justify-content-evenly">
+      <p class="nav-item">Features</p>
+      <p class="nav-item">Team</p>
+      <p class="nav-item">Sign In</p>
+    </div>
+
+  </nav>
+
+  <section class="first__section m-auto text-center col-10 col-sm-12 p-4 text-sm-start d-flex flex-wrap flex-row-reverse justify-content-between">
+    <img src="images/illustration-1.svg" alt="illustration-1" class=" img-fluid col-sm-4">
+    <div class="first__section__text col-sm-7">
+    <h2 class="py-4">All your files in one secure location, accessible anywhere.</h2>
+    <p> Fylo stores your most important files in one secure location. 
+      Access them wherever you need, share and collaborate with friends, 
+      family, and co-workers.</p>
+
+      <div class="first__section__form ">
+        <form class="d-flex flex-wrap justify-content-between form_top">
+          <input type="email" class=" my-2 px-3 py-2 col-sm-7 col-12 rounded-2 " placeholder="Enter your email" id="email" required >
+          <button type="submit" class="rounded-1 border-0 col-12 col-sm-4 my-2 py-2"> Get Started</button>
+        </form>
+    </div>
+    
+    </div>
+  </section>
+  
+ <picture class="my-5">
+    <source media="(min-width: 768px)" srcset="images/bg-curve-desktop.svg"  >
+    <img src="images/bg-curve-mobile.svg" alt="" class="img-fluid w-100">
+  </picture>
+
+  <section class="second__section  col-12 col-sm-12 d-flex flex-wrap flex-row-reverse justify-content-evenly align-items-center ">
+    
+
+
+    <div class="col-sm-4 pt-5 col-10 m-auto">
+    <img src="images/illustration-2.svg" alt="illustration-2" class="img-fluid "> </div>
+    <div class="col-sm-7 col-10 m-auto">
+    <h2 class="text-center text-sm-start py-5">Stay productive, wherever you are</h2>
+    <p>Never let location be an issue when accessing your files. Fylo has you 
+      covered for all of your file storage needs.</p>
+    <p>Securely share files and folders with friends, family and colleagues for 
+      live collaboration. No email attachments required!</p>
+
+      <div class="second__section__link text-center text-sm-start pt-3  col-12 col-sm-4">
+        <span>See how Fylo works</span>
+        <img src="images/icon-arrow.svg" alt="icon-arrow" class="img-fluid ">
+        <div class="second__section__line col-sm-7 col-5 m-sm-0 m-auto"></div>
+
+      </div>
+
+      <div class="second__section__card p-4 rounded-2 shadow my-5 col-sm-8">
+        <img src="images/icon-quotes.svg" alt="icon-quote">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.
+        </p>
+        <div class="second__section__card__testimonial d-flex gap-3">
+          <img src="images/avatar-testimonial.jpg" alt="avatar-testimonial" class="img-fluid rounded-circle col-2">
+         <div class="second__section__card__testimonial__profile">
+          <h6> Kyle Burton</h6>
+          <p> Founder & CEO, Huddle</p>
+         </div> 
+        </div>
+      </div>
+      
+    </div>
+  
+  </section>
+
+  <section class="third__section text-center p-4 d-flex flex-wrap text-sm-start col-sm-12">
+    <div  class="col-sm-5">
+    <h2 class="py-2 mt-5">Get early access today</h2>
+    <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+      If you have any questions, our support team would be happy to help you.</p>
+    </div>
+      <div class="third__section__form col-10 m-auto my-5 col-sm-5">
+        <form class="form_bottom">
+          <input type="email" class=" my-2 px-3 py-2  col-12 rounded-2" placeholder="email@example.com" id="email" required >
+
+          <button type="submit" class="rounded-1 border-0 py-2 col-12 col-sm-8"> Get Started For Free</button>
+        </form>
+      </div>
+  </section>
+ 
+ <section class="footer p-5 d-flex flex-wrap justify-content-between">
+  <img src="images/logo_footer.svg" alt="logo_footer" class="img-fluid py-5 col-4 col-sm-2">
+ <div class="footer__contact d-flex flex-wrap col-12">
+  <div class="col-sm-4">
+  <div class="footer__contact_phone d-flex col-12 gap-3 ">
+    <img src="images/icon-phone.svg" alt="icon-phone" class="img-fluid">
+    <p>Phone: +1-543-123-4567</p>
+    
+  </div>
+  <div class="footer__contact_email d-flex gap-3 pb-5 ">
+    <img src="images/icon-email.svg" alt="icon-email"  required class="img-fluid">
+    <p>example@fylo.com</p>
+  </div>
+</div>
+  <div class="footer__links col-12 col-sm-2 pb-4">
+    <p>About Us</p>
+    <p>Jobs</p>
+    <p>Press</p>
+    <p>Blog</p>
+  </div>
+  <div class="footer__links col-sm-2">
+    <p>Contact Us</p>
+    <p>Terms</p>
+    <p> Privacy</p>
+
+  </div>
+  <div class="footer__socialMedia text-center col-sm-3 col-12">
+    <i class="fa-brands fa-facebook-f m-1"></i>
+    <i class="fa-brands fa-twitter m-1 "></i>
+    <i class="fa-brands fa-instagram m-1"></i>
+  </div>
+</div>
+
+ </section>
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/tania-valera">Tania Valera</a>.
+    </p>
+  </footer>
+</body>
+</html>

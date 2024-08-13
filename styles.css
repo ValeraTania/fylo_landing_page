@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --veryDarkBlue: hsl(243, 87%, 12%);
+--desaturatedBlue: hsl(238, 22%, 44%);
+--brightBlue: hsl(224, 93%, 58%);
+--moderateCyan: hsl(170, 45%, 43%);
+--lightGrayishBlue: hsl(240, 75%, 98%);
+--lightGray: hsl(0, 0%, 75%);
+--fontOpenSans: 'Open Sans', sans-serif;
+--fontRaleway:  "Raleway", sans-serif;
+
+}
+.content{
+    font-size: 16px;
+    font-family: var(--fontOpenSans);
+}
+
+.navbar{
+    font-family: var(--fontRaleway);
+}
+
+.first__section__text h2, .second__section h2,.second__section__card__testimonial__profile h6,.third__section h2{
+    font-family: var(--fontRaleway);
+    font-weight: 700;
+}
+
+input{
+ border: 1px solid var(--veryDarkBlue);
+ 
+}
+
+
+button{
+    background-color: var(--brightBlue);
+    color: var(--lightGrayishBlue);
+    font-family: var(--fontRaleway);
+    font-weight: 700;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+.second__section{
+
+background-color: var(--lightGrayishBlue);
+}
+
+.second__section__link{
+    color: var(--moderateCyan);
+    font-family: var(--fontRaleway);
+}
+
+.second__section__line{
+    border-bottom: .15em solid var(--moderateCyan);
+}
+
+.second__section__link:hover,.second__section__line:hover{
+    color: hsl(170, 80%, 56%);
+    border-color: hsl(170, 80%, 56%);
+    cursor: pointer;
+}
+
+
+.second__section p{
+    color: var(--desaturatedBlue);
+}
+
+.second__section__card{
+    background-color: #fff;
+
+}
+
+.third__section{
+    background-color: var(--desaturatedBlue);
+    color: var(--lightGrayishBlue);
+}
+
+.footer{
+    background-color: var(--veryDarkBlue);
+    color: var(--lightGrayishBlue);
+}
+
+.footer__contact img{
+ height: 1em;
+ width: 1.2em;
+}
+
+.fa-facebook-f{
+
+    padding: .50em .75em ;
+}
+
+i{
+    border: .10em solid var(--lightGrayishBlue);  
+    border-radius: 50%;
+    padding: .50em .50em ;
+
+}
+.footer__links>p:hover, i:hover{
+    color: var(--brightBlue);
+    cursor: pointer;
+    border-color: var(--brightBlue);
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /**
+ * Form Validation Errors
+ */
+.error {
+	border-color: red;
+}
+
+.error-message {
+	color: red;
+    font-family: var(--fontOpenSans);
+    font-size: .85em;
+	margin-bottom: 1em;
+    text-align: start;
+}
+
+.form_bottom .error-message{
+    color: var(--lightGrayishBlue);
+}
+
+@media screen and (min-width:560px) {
+    .form_top .error-message{
+        position: absolute;
+        padding-top: 4em;
+    }
+}
